@@ -34,7 +34,7 @@ public class SearchBrandPage {
 		//click on branch Searched
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@id='list_topbrands']//following-sibling::div//a[text()='Maybelline New York'])[1]")));
 		WebElement SearchedBrand = driver.findElement(By.xpath("(//div[@id='list_topbrands']//following-sibling::div//a[text()='Maybelline New York'])[1]"));
-		Thread.sleep(10000);
+		
 		SearchedBrand.click();	
 		//verify Brand name on Searching result page
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[text()='Buy Maybelline New York Products Online']")));
